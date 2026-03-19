@@ -30,10 +30,10 @@ if not CLient_abnormal then
     local VersionData = loadstring(game:HttpGet(pathVersion))()
     local CoreGui = game:GetService("StarterGui")
 
-    if VersionData[_G.WhatMap] then
+    if VersionData[WhatMap] then
         CoreGui:SetCore("SendNotification", {
             Title = "Running Script by tarrzth";
-            Text = "ขอบคุณที่ใช้งาน Version: "..VersionData[_G.Map] ;
+            Text = "ขอบคุณที่ใช้งาน Version Script: "..VersionData[WhatMap].."\n Version Loader: "..VersionData.Loader ;
             Duration = 5;
             -- --Callback here
             -- Button1 = "Yes";

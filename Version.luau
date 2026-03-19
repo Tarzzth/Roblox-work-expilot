@@ -1,3 +1,4 @@
 return {
-    BloxSpin = "1.0.1"
+    Loader =  "1.0.2",
+    BloxSpin = "1.0.0"
 }
