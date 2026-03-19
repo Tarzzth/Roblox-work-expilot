@@ -31,9 +31,6 @@ end
 
 if not CLient_abnormal then
     local WhatMap = _G.WhatMap
-    local Key = _G.Key
-    local DataKey = {}
-    if table.find(DataKey , Key) then
-        loadstring()
-    end
+    local path = "https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Maps/"..WhatMap..".luau"
+    loadstring(path)()
 end
