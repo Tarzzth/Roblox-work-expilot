@@ -24,13 +24,28 @@ if _G.WhatMap == "" or not _G.WhatMap then
     Kick("Client ไม่มี WhatMap")
 end
 
-if _G.Key == "" or not _G.Key then
-    CLient_abnormal = true
-    Kick("Client ไม่มี Key")
-end
-
 if not CLient_abnormal then
     local WhatMap = _G.WhatMap
+    local pathVersion = "https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Version.luau"
+    local VersionData = loadstring(game:HttpGet(pathVersion))()
+    local CoreGui = game:GetService("StarterGui")
+
+    if VersionData[_G.Map] then
+        CoreGui:SetCore("SendNotification", {
+            Title = "Running Script by tarrzth";
+            Text = "ขอบคุณที่ใช้งาน Version: "..VersionData[_G.Map] ;
+            Duration = 5;
+            -- --Callback here
+            -- Button1 = "Yes";
+            -- Button2 = "No";
+        })
+    end
+
+
+    print("--------------------------------------------------")
+    warn("Start Script By - tarrzth")
+    print("--------------------------------------------------")
+
     local path = "https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Maps/"..WhatMap..".luau"
     loadstring(path)()
 end

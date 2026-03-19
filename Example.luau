@@ -2,5 +2,4 @@
 -- Script แบบ OpenSource แต่เพื่อความะดวกสำหรับการอัพเดท
 
 _G.WhatMap = ""
-_G.Key = "Key-1"
--- loadstring()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Loader.lua"))()
