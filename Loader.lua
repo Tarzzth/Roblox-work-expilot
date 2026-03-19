@@ -47,6 +47,5 @@ if not CLient_abnormal then
     print("--------------------------------------------------")
 
     local path = "https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Maps/"..WhatMap..".luau"
-    print(path)
-    loadstring(path)()
+    loadstring(game:HttpGet(path))()
 end
