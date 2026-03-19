@@ -30,7 +30,7 @@ if not CLient_abnormal then
     local VersionData = loadstring(game:HttpGet(pathVersion))()
     local CoreGui = game:GetService("StarterGui")
 
-    if VersionData[_G.Map] then
+    if VersionData[_G.WhatMap] then
         CoreGui:SetCore("SendNotification", {
             Title = "Running Script by tarrzth";
             Text = "ขอบคุณที่ใช้งาน Version: "..VersionData[_G.Map] ;
@@ -47,5 +47,6 @@ if not CLient_abnormal then
     print("--------------------------------------------------")
 
     local path = "https://raw.githubusercontent.com/Tarzzth/Roblox-work-expilot/refs/heads/main/Maps/"..WhatMap..".luau"
+    print(path)
     loadstring(path)()
 end

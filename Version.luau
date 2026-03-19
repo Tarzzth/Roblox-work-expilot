@@ -1,3 +1,3 @@
 return {
-    BloxSpin = "1.0.0"
+    BloxSpin = "1.0.1"
 }
