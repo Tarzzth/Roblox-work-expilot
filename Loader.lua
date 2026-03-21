@@ -1,8 +1,7 @@
 local Env = getgenv and getgenv()
 
-local Kick = game.Players.LocalPlayer.Kick
 if _G.WhatMap == "" or not _G.WhatMap then
-    Kick("Client ไม่มี WhatMap")
+    game.Players.LocalPlayer:Kick("Client ไม่มี _G.WhatMap")
 end
 
 local WhatMap = _G.WhatMap
