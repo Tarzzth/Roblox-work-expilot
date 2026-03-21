@@ -1,4 +1,7 @@
 return {
+    -- ## Core ##
     Loader =  "1.0.3",
-    BloxSpin = "1.0.1"
+
+    -- ## Script ##
+    BloxSpin = "1.0.2"
 }
